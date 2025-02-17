@@ -1,6 +1,7 @@
 /* my color variables  */
 :root {
     --light-text-color: "#242424";
+    --light-hover-bg: "#e4e4e4";
 }
 
 /* styling for navbar */
@@ -54,15 +55,43 @@ nav {
     gap: 1px;
 }
 
-.links a:hover{
-    background-color: #e4e4e4dc;
+.links a:hover {
+    background-color: var(--light-hover-bg);
 }
 
-.links a i{
+.links a i {
     color: var(--light-text-color);
     font-size: 20px;
     transform: rotate(-45deg);
     opacity: .4;
 }
 
+.menu {
+    display: none;
+    background-color: var(--light-hover-bg);
+    padding: 4px;
 
+}
+
+.menu i {
+    font-size: 22px;
+
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        min-height: unset;
+        padding: 0px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .links {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
