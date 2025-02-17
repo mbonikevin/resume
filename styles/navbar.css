@@ -1,0 +1,68 @@
+/* my color variables  */
+:root {
+    --light-text-color: "#242424";
+}
+
+/* styling for navbar */
+nav {
+    width: 100%;
+    min-height: 60px;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+
+.logo img {
+    height: 35px;
+    border-radius: 50%;
+}
+
+.logo h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0;
+    height: 100%;
+}
+
+.links a {
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 10px 10px 14px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: var(--light-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+
+.links a:hover{
+    background-color: #e4e4e4dc;
+}
+
+.links a i{
+    color: var(--light-text-color);
+    font-size: 20px;
+    transform: rotate(-45deg);
+    opacity: .4;
+}
+
+
