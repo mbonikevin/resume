@@ -69,6 +69,10 @@ nav {
   background-color: var(--hover-bg);
   padding: 6px 6px 4px 6px;
   border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 6px;
+  right: 12px;
 }
 
 .menu i {
@@ -85,8 +89,29 @@ nav {
 @media screen and (max-width: 500px) {
   .links {
     display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    flex-direction: column;
+    background-color: var(--element-bg);
+    height: fit-content;
+    width: 130px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #00000010;
+    
   }
-
+  .links button,
+  .links a {
+    width: 100%;
+  }
+  .links button:hover,
+  .links a:hover {
+    background-color: var(--hover-bg);
+  }
+  #show:checked ~ .links{
+    display: flex;
+  }
   .menu {
     display: block;
   }
