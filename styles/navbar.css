@@ -1,20 +1,17 @@
-/* my color variables  */
-:root {
-  --light-text-color: #242424;
-  --light-body-bg: #fafafa;
-  --light-hover-bg: #e4e4e4;
-}
-
 /* styling for navbar */
 nav {
   width: 100%;
   min-height: 60px;
   height: fit-content;
-  background-color: transparent;
+  background-color: var(--body-bg-tr);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(17px);
 }
 
 .logo {
@@ -49,7 +46,7 @@ nav {
   padding: 10px 10px 10px 14px;
   background-color: transparent;
   border-radius: 10px;
-  color: var(--light-text-color);
+  color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,11 +54,11 @@ nav {
 }
 
 .links a:hover {
-  background-color: var(--light-hover-bg);
+  background-color: var(--hover-bg);
 }
 
 .links a i {
-  color: var(--light-text-color);
+  color: var(--text-color);
   font-size: 20px;
   transform: rotate(-45deg);
   opacity: 0.4;
@@ -69,18 +66,19 @@ nav {
 
 .menu {
   display: none;
-  background-color: var(--light-hover-bg);
-  padding: 4px;
+  background-color: var(--hover-bg);
+  padding: 6px 6px 4px 6px;
+  border-radius: 10px;
 }
 
 .menu i {
-  font-size: 22px;
+  font-size: 28px;
 }
 
 @media screen and (max-width: 1024px) {
   nav {
     min-height: unset;
-    padding: 0px;
+    padding: 10px;
   }
 }
 

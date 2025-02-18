@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/hero.css">
     <link rel="stylesheet" href="./styles/projects.css">
+    <link rel="stylesheet" href="./styles/projects.css">
     <!-- icons cnd -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -22,6 +23,7 @@
             <h3>Kevin.</h3>
         </div>
         <div class="links">
+            <button class="theme"><i class='bx bxs-sun'></i></button>
             <a href="#">GitHub <i class='bx bx-right-arrow-alt'></i></a>
             <a href="#">Linkedin <i class='bx bx-right-arrow-alt'></i></a>
         </div>
@@ -43,9 +45,12 @@
 
     <!-- projects -->
     <section class="projects">
-        <div class="overlay" onclick="handleCloseProjectsModal()">
+        <div class="overlay">
+            <div class="close_placeholder" onclick="handleCloseProjectsModal()"></div>
             <div class="player">
-                
+                <button onclick="handleCloseProjectsModal()">
+                    <i class='bx bx-x'></i>
+                </button>
             </div>
         </div>
         <h4>SELECTED PROJECTS</h4>
@@ -56,5 +61,6 @@
 
 <script src="./js/main.js"></script>
 <script src="./js/projects.js"></script>
+<script src="./js/theme.js"></script>
 
 </html>
