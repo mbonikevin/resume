@@ -65,3 +65,15 @@ body {
 .hero h1 {
   font-family: GraphikMedium !important;
 }
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+footer h5{
+  opacity: .6;
+  font-size: 12px;
+}
