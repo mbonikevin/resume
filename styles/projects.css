@@ -19,7 +19,7 @@
 .project_grid .project {
   background-color: transparent;
   padding: 30px 20px;
-  border-top: 2px solid var(--hover-bg);
+  border-top: 2px solid var(--hover-bg-tr);
   display: flex;
   align-items: center;
   justify-content: space-between;

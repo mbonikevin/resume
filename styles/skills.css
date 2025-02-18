@@ -1,6 +1,6 @@
 .skills {
   width: 100%;
-  padding: 20px;
+  padding: 40px 20px;
   max-width: 1100px;
   margin: auto;
   position: relative;
@@ -36,7 +36,7 @@
     align-items: center;
     border-radius: 14px;
     img {
-      height: 30px;
+      height: 35px;
     }
   }
   h1 {
