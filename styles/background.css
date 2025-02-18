@@ -22,8 +22,8 @@
   text-align: justify;
 }
 
-.background_content span{
-  background-color: var(--element-bg);
+.background_content span {
+  background-color: var(--hover-bg);
   padding: 10px 10px 10px 5px;
   border-radius: 15px;
   position: relative;
@@ -33,10 +33,17 @@
   cursor: pointer;
 }
 
-.background_content span img{
+.background_content span img {
   height: 30px;
   width: auto;
   border-radius: 50%;
-  transform: translateY(8px)  ;
-  
+  transform: translateY(8px);
+}
+
+@media screen and (max-width: 500px) {
+  .background_content {
+    text-align: left;
+    font-size: 25px;
+    line-height: 40px;
+  }
 }
