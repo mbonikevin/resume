@@ -26,8 +26,8 @@ const projects = [
   },
 ];
 
-const userList = document.querySelector(".project_grid");
-userList.innerHTML = projects
+const projectSection = document.querySelector(".project_grid");
+projectSection.innerHTML = projects
   .map(
     (project) =>
       `<a href="${project.link}" target='_blank' class='project'>
