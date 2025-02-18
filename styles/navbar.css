@@ -1,97 +1,95 @@
 /* my color variables  */
 :root {
-    --light-text-color: "#242424";
-    --light-hover-bg: "#e4e4e4";
+  --light-text-color: #242424;
+  --light-body-bg: #fafafa;
+  --light-hover-bg: #e4e4e4;
 }
 
 /* styling for navbar */
 nav {
-    width: 100%;
-    min-height: 60px;
-    height: fit-content;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px;
+  width: 100%;
+  min-height: 60px;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
 }
 
 .logo img {
-    height: 35px;
-    border-radius: 50%;
+  height: 35px;
+  border-radius: 50%;
 }
 
 .logo h3 {
-    font-weight: 600;
-    font-size: 18px;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .links {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 0;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0;
+  height: 100%;
 }
 
 .links a {
-    font-size: 14px;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 10px 10px 10px 14px;
-    background-color: transparent;
-    border-radius: 10px;
-    color: var(--light-text-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 10px 10px 14px;
+  background-color: transparent;
+  border-radius: 10px;
+  color: var(--light-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
 }
 
 .links a:hover {
-    background-color: var(--light-hover-bg);
+  background-color: var(--light-hover-bg);
 }
 
 .links a i {
-    color: var(--light-text-color);
-    font-size: 20px;
-    transform: rotate(-45deg);
-    opacity: .4;
+  color: var(--light-text-color);
+  font-size: 20px;
+  transform: rotate(-45deg);
+  opacity: 0.4;
 }
 
 .menu {
-    display: none;
-    background-color: var(--light-hover-bg);
-    padding: 4px;
-
+  display: none;
+  background-color: var(--light-hover-bg);
+  padding: 4px;
 }
 
 .menu i {
-    font-size: 22px;
-
+  font-size: 22px;
 }
 
 @media screen and (max-width: 1024px) {
-    nav {
-        min-height: unset;
-        padding: 0px;
-    }
-
+  nav {
+    min-height: unset;
+    padding: 0px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .links {
-        display: none;
-    }
+  .links {
+    display: none;
+  }
 
-    .menu {
-        display: block;
-    }
+  .menu {
+    display: block;
+  }
 }
