@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M. Kaneza Kevin</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <!-- my styling files -->
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/navbar.css">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="./styles/projects.css">
     <link rel="stylesheet" href="./styles/skills.css">
     <link rel="stylesheet" href="./styles/background.css">
+    <link rel="stylesheet" href="./styles/contact.css">
     <!-- icons cnd -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -20,18 +22,20 @@
 <body>
     <!-- navbar -->
     <nav>
+        <!-- menu for mobile -->
+        <input type="checkbox" id="show" hidden>
+        <label for="show" class="menu">
+            <i class='bx bx-menu'></i>
+        </label>
         <div class="logo">
             <img src="./assets/me.jpg" height="35px" />
             <h3>Kevin.</h3>
         </div>
         <div class="links">
             <button class="theme"><i class='bx bxs-sun'></i></button>
-            <a href="#">GitHub <i class='bx bx-right-arrow-alt'></i></a>
-            <a href="#">Linkedin <i class='bx bx-right-arrow-alt'></i></a>
-        </div>
-        <!-- menu for mobile -->
-        <div class="menu">
-            <i class='bx bx-menu'></i>
+            <a href="https://github.com/mbonikev" target="_blank">GitHub <i class='bx bx-right-arrow-alt'></i></a>
+            <a href="https://www.linkedin.com/in/kevinkaneza" target="_blank">Linkedin <i
+                    class='bx bx-right-arrow-alt'></i></a>
         </div>
     </nav>
 
@@ -72,6 +76,32 @@
                     alt=""> African Leadership University</span> and I'm Open to work.
         </div>
     </section>
+
+    <!-- contact me -->
+    <section class="contact">
+        <h4>Contact me</h4>
+        <div class="contact_content">
+            <div>
+                <h1>Get in touch with me</h1>
+            </div>
+            <div class="contact_options">
+                <a href="mailto:k.mbonimpay@alustudent.com" target="_blank" class="option">
+                    <img src="https://img.icons8.com/color/96/gmail-new.png" height="30">
+                    Gmail
+                </a>
+                <a href="https://wa.me/250785614800" target="_blank" class="option">
+                    <img src="https://img.icons8.com/color/96/whatsapp--v1.png" height="30">
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <h5>&copy; 2025, Resume.</h5>
+        <h5>Mbonimpaye Kaneza Kevin</h5>
+    </footer>
 </body>
 
 <script src="./js/main.js"></script>
