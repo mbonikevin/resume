@@ -35,8 +35,8 @@
   border-bottom: none;
 }
 
-.project_grid .project:hover{
-    background-color: var(--hover-bg-tr);
+.project_grid .project:hover {
+  background-color: var(--hover-bg-tr);
 }
 
 .title {
@@ -57,11 +57,11 @@
   display: flex;
   align-items: center;
   gap: 3px;
-  opacity: .3;
+  opacity: 0.3;
 }
 
-.project_grid .project:hover .icons{
-    opacity: 1;
+.project_grid .project:hover .icons {
+  opacity: 1;
 }
 
 .icons button,
@@ -113,4 +113,23 @@
 
 .theme:hover {
   background-color: var(--hover-bg);
+}
+
+@media screen and (max-width: 700px) {
+  .title h1 {
+    font-size: 30px;
+    line-height: unset;
+  }
+  .icons svg,
+  .icons svg{
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .title h1 {
+    font-size: 25px;
+    line-height: unset;
+  }
 }
