@@ -28,10 +28,12 @@ html {
   --body-bg: #fafafa;
   --body-bg-tr: #fafafac8;
   --hover-bg: #e4e4e4;
+  --hover-bg-tr: #e4e4e470;
   --element-bg: #fff;
 
   background-color: var(--body-bg);
   color: var(--text-color);
+  color-scheme: light;
 }
 
 html.dark {
@@ -40,17 +42,18 @@ html.dark {
   --body-bg: #161616;
   --body-bg-tr: #161616c8;
   --hover-bg: #202020;
+  --hover-bg-tr: #20202070;
   --element-bg: #2a2a2a;
 
   background-color: var(--body-bg);
   color: var(--text-color);
+  color-scheme: dark;
 }
 
 body {
   max-width: 1250px;
   margin: auto;
   padding: 0 10px;
-  color-scheme: light dark;
 }
 
 @media screen and (max-width: 1024px) {
