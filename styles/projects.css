@@ -1,0 +1,88 @@
+/* my color variables  */
+:root {
+  --light-text-color: #242424;
+  --light-body-bg: #fafafa;
+  --light-hover-bg: #e4e4e4;
+}
+.projects {
+  width: 100%;
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.projects h4 {
+  opacity: 0.65;
+}
+
+.project_grid {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.project_grid .project {
+  background-color: transparent;
+  padding: 30px 10px;
+  border-top: 2px solid var(--light-hover-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project_grid .project:nth-child(1) {
+  border-top: none;
+}
+
+.project_grid .project:last-child {
+  border-bottom: none;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title h1 {
+  font-size: 40px;
+}
+
+.title h1:first-child {
+  color: #b8b8b8;
+  user-select: none;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.icons button,
+.icons a {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.icons button:hover,
+.icons a:hover {
+  background-color: var(--light-hover-bg);
+}
+
+.icons button svg,
+.icons a svg {
+  stroke: #b8b8b8;
+}
+
+.icons button:hover svg,
+.icons a:hover svg{
+    stroke: var(--light-text-color);
+}
